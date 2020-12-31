@@ -1,0 +1,321 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bree Serif';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 500;
+    width: 100%;
+
+}
+
+#navbar{
+    display: grid;
+    grid-template-areas: 'logo title ul button' ;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: deepskyblue;
+    top: 0px;
+    z-index: -2;
+    opacity: 0.6;
+}
+
+
+#navbar ul{
+    display: flex;
+    margin: auto 0px;
+    grid-area: ul;
+}
+
+#navbar ul li{
+    font-size: 1.4rem;
+    list-style: none;
+    padding: 8px 55px;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#logo{
+    padding: 10px 20px;
+    grid-area: logo;
+    width: 88px;
+}
+
+#logo img{
+    height: 80px;
+    width: 90px;
+}
+
+header button{
+    grid-area: button;
+    width: 165px;
+    position: relative;
+    margin: auto;
+}
+
+#title{
+    font-family: 'Lobster';
+    grid-area: title;
+    font-size: 2.2rem;
+    position: relative;
+    top: 27px;
+}
+
+/* Home Section */
+#home{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    align-items: center;
+    margin: auto;
+    width: 767px;
+    height: 445px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: url(/all_Images/backgrounds/pexels-negative-space-169573.jpg) no-repeat center center/cover;
+    top: 0px;
+    z-index: -5;
+    opacity: 0.4;
+}
+
+/* Utility Classes */
+.btn{
+    background-color: black;
+    height: 61px;
+    border-radius: 4px;
+    padding: 5px 27px;
+    border: 2px solid white;
+}
+
+.btn:hover{
+    border: 3px solid cornflowerblue;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn a{
+    color: deepskyblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.headingPrimary{
+    font-size: 3.1rem;
+    font-family: 'Lobster';
+}
+
+.headingSecondary{ 
+    font-size: 2.9rem;
+    font-family: 'Bebas Neue';
+}
+
+.center{
+    text-align: center;
+}
+
+/* Services Section */
+#services{
+    font-size: 1.7rem;
+    width: 789px;
+    display: flex;
+    height: 670px;
+    flex-direction: column;
+    padding: 40px 0px;
+    margin: auto;
+    align-items: center;
+}
+
+#services::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(/all_Images/backgrounds/pexels-tim-gouw-52608.jpg) no-repeat center center/cover;
+    top: 594px;
+    z-index: -5;
+    opacity: 0.4;
+}
+
+#services form{
+    font-size: 1.8rem;
+    padding: 15px 0px;
+    margin-top: 30px;
+    border: 3px solid white;
+}
+
+#services label{
+    font-family: 'Exo 2';
+    display: block;
+    padding: 0px 10px;
+}
+
+#services input{
+    margin: auto;
+    height: 45px;
+    width: 505px;
+    font-size: 1.5rem;
+}
+
+#email{
+    display: block;
+    margin: auto;
+}
+
+.sub1{
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Partners Section */
+#partners{
+    font-size: 1.7rem;
+    width: 789px;
+    display: flex;
+    height: 380px;
+    flex-direction: column;
+    padding: 40px 0px;
+    margin: auto;
+    align-items: center;
+}
+
+#partners::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background: url(/all_Images/partnersORclients.jpg) no-repeat center center/cover;
+    top: 1355px;
+    z-index: -5;
+    opacity: 0.4;
+}
+
+#partners img{
+    height: 110px;
+    padding: 100px 50px;
+}
+
+#companies{
+    display: flex;
+}
+
+/* Back To Top Button */
+#top{
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    border-radius: 5px;
+    border: none;
+}
+#top img{
+    height: 50px;
+}
+
+/* Contact Section */
+#contact{
+    font-size: 1.7rem;
+    width: 789px;
+    display: flex;
+    height: 800px;
+    flex-direction: column;
+    padding: 40px 0px;
+    margin: auto;
+    align-items: center;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(/all_Images/contact-us.png) no-repeat center center/cover;
+    top: 1810px;
+    z-index: -50;
+    opacity: 0.5;
+}
+
+#contact h1{
+    padding-bottom: 40px;
+}
+
+#contact form{
+    display: block;
+}
+
+#contact label{
+    display: block;
+    margin: auto;
+}
+
+#contact input{
+    display: block;
+    font-size: 1.3rem;
+    padding: 4px 8px;
+    margin: auto;
+    margin-top: 10px;
+    width: 400px;
+}
+#contact textarea{
+    display: block;
+    font-size: 1.3rem;
+    padding: 4px 8px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+#res{
+    display: inline-block;
+    align-items: center;
+    width: 252px;
+}
+
+#subm{
+    display: inline-block;
+    align-items: center;
+    width: 252px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    font-size: 1.3rem;
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+
+footer p{
+    font-family: 'Exo 2';
+}
+
+footer a{
+    font-family: 'Lobster';
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: deepskyblue;
+}

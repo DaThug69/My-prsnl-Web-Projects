@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch - Live Time Counter</title>
+    <link rel="stylesheet" href="style.css">
+  
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="theMainBox">
+        <div id="headingMain">
+            <h1 id="thesw">THE STOPWATCH</h1>
+            <h1 id="tagline">Count With Us</h1>
+        </div>
+        <div id="startTimer">
+            Start Time :- <div id="timer">Your Starting Time Will Show Up Here</div>
+            <button onclick="clicked()" class="btns" id="btn1" onmouseover="bdrEff()">Start</button>
+        </div>
+        <div id="liveTimer">
+            Time :- <div id="watch">The Live Time Can Be Seen Here</div>
+            <button onclick="watch()" class="btns" id="btn2" onmouseover="bdrEff()">Show Live Time</button>
+
+        </div>
+        <div id="stopTimer">
+            Stop Time :- <div id="timerStop">Your Final Time Will Be Seen Here</div>
+            <button onclick="clickedStop()" class="btns" onmouseover="bdrEff()" id="btn3">Stop</button>
+
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

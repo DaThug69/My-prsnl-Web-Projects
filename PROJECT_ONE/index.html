@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitStar - Become A FitStar Today</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url(images/og.jpg);
+            background-size: 100%;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .middle {
+            /* border: 3px solid cyan; */
+            display: block;
+            width: 45%;
+            height: 100%;
+            margin: 20px auto;
+            font-size: 25px;
+        }
+
+        .right {
+            /* border: 3px solid chartreuse; */
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+            margin: 10px;
+            list-style: none;
+            width: 100%;
+            padding: 0px 0px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 3px 15px;
+            font-family: 'Goldman';
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            background-color: black;
+            text-decoration: underline;
+            color: white;
+        }
+
+        .left img {
+            height: 89px;
+            width: 142px;
+            filter: invert(100%);
+            border-radius: 70px;
+        }
+
+        .left img:hover {
+            filter: invert(90%);
+        }
+
+        #compName {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(159, 201, 255);
+            background-color: black;
+            text-align: center;
+            font-size: 25px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #compName:hover {
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+        #searchBtn {
+            margin: 0px;
+            /* border: 5px solid gray; */
+            box-sizing: border-box;
+            border-radius: 10px;
+            height: 35px;
+        }
+
+        #searchIm {
+            height: 35px;
+            width: 35px;
+            filter: invert(100%);
+        }
+
+        #chatBtn {
+            height: 35px;
+            border: 2px solid blue;
+            background-color: white;
+            color: blue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-radius: 10px;
+        }
+
+        #chatBtn:hover {
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+        .container {
+            border: 3px solid darkblue;
+            margin: 100px 70px;
+            width: 89%;
+            border-radius: 7px;
+            padding: 8px 8px;
+            background-color: rgba(168, 168, 168, 0.3);
+            text-align: center;
+
+        }
+
+        .container h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: chartreuse;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .container h2 {
+            font-family: 'cabin', sans-serif;
+            /* color: darkslateblue;
+            background-color: rgb(255, 137, 137); */
+            color: yellow;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        #offerHead {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            color: chartreuse;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        form {
+            border: 3px solid darkcyan;
+            border-radius: 9px;
+            width: 50%;
+            margin: auto;
+            background-image: url(images/image.jpg);
+
+            background-size: 100% auto;
+
+            background-position: center;
+            /* background-repeat: no-repeat; */
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 200px;
+            padding: 3px 50px;
+            border: 2px solid cyan;
+            margin: 10px auto;
+            font-size: large;
+            border-radius: 10px;
+        }
+
+        .form-group select {
+            text-align: center;
+            display: block;
+            width: 310px;
+            padding: 3px 50px;
+            border: 2px solid cyan;
+            margin: 10px auto;
+            font-size: large;
+            border-radius: 10px;
+        }
+
+        .form-group h2 {
+            background-color: rgba(138, 43, 226, 0.4);
+        }
+
+        .btn {
+            box-sizing: border-box;
+            color: yellow;
+            height: 45px;
+            /* width: 100px; */
+            font-size: 18px;
+            padding: 2px 4px;
+            font-family: 'cabin', sans-serif;
+            background-color: blueviolet;
+        }
+
+        #resetBtn {
+            width: 120px;
+        }
+
+        .btn:hover {
+            filter: invert(100%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="left">
+            <!-- for logo -->
+            <img src="images/finalLogo(1).jpg" alt="LOGO HERE">
+            <div id="compName">FitStar</div>
+        </div>
+        <div class="middle">
+            <!-- for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- for buttons -->
+            <img src="images/search button.png" alt="search button" id="searchIm">
+            <input type="search" name="search" id="searchBtn">
+            <button id="chatBtn">Chat With Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join Now To Get A Discount Of Flat 40% !</h1>
+        <h2>Fill The Form And Become A FitStar</h2>
+        <h2 id="offerHead">Recommend this offer to your family and friends to avail the Discount of 20% on our Platinum
+            Membership !</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <h2>Full Name</h2>
+                <input type="text" name="Name" id="nameInp">
+                <hr>
+                <h2>Age</h2>
+                <input type="number" name="Age" id="ageInp">
+                <hr>
+                <h2>Gender</h2>
+                <input type="text" name="Gender" id="genderInp">
+                <hr>
+                <h2>Phone Number</h2>
+                <input type="text" name="PhoneNumber" id="phoneInp">
+                <hr>
+                <h2>Email ID</h2>
+                <input type="text" name="EmailID" id="emailInp">
+                <hr>
+                <h2>Membership Plans</h2>
+                <select name="Membership" id="carOpt">
+                    <option value="Regular">Regular-75$ per month</option>
+                    <option value="Silver">Silver-150$ per month</option>
+                    <option value="Gold">Gold-270$ per month</option>
+                    <option value="Diamond">Diamond-350$ per month</option>
+                    <option value="Platinum">Platinum-420$ per month</option>
+                </select>
+                <button type="submit" class="btn">Submit And Join Now!</button>
+                <button type="reset" class="btn" id="resetBtn">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

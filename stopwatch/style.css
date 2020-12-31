@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#theMainBox{
+    padding-top: 20px;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    margin: auto;
+    
+}
+
+#theMainBox::before{
+    content: "";
+    background: url(/bg.png) no-repeat center center/cover;
+    opacity: 0.5;
+    z-index: -50;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+
+#startTimer{
+    font-family: 'Josefin Sans';
+    /* margin-top: 111px; */
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#startTimer::before{
+    margin-top: 50px;
+    content: "";
+    background-color: aqua;
+    opacity: 0.5;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: -20;
+    
+}
+
+#liveTimer{
+    font-family: 'Josefin Sans';
+    font-size: 1.5rem;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+}
+
+#liveTimer::before{
+    content: "";
+    background-color: navy;
+    opacity: 0.5;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 349px;
+    left: 0;
+    z-index: -30;
+}
+
+#stopTimer{
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans';
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 153px;
+    width: 100%;
+    justify-content: center;
+}
+
+#stopTimer::before{
+    content: "";
+    background-color: paleturquoise;
+    opacity: 0.6;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 549px;
+    left: 0;
+    z-index: -30;
+}
+
+#headingMain{
+    margin: auto;
+    font-family: 'Abel';
+    font-size: 1.5rem;
+}
+
+
+#tagline{
+    font-family: 'Sansita Swashed';
+    position: relative;
+    left: 50px; 
+}
+
+.btns{
+    font-family: 'Bebas Neue';
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    letter-spacing: 0.2rem;
+    padding: 10px 30px;
+    font-size: 1.3rem;
+    border-radius: 7px;
+}
+
+#btn1{
+    border: 4px solid blue;
+}
+
+#btn2{
+    border: 4px solid blueviolet;
+}
+
+#btn3{
+    border: 4px solid cadetblue;
+}
+
+#thesw{
+    letter-spacing: 0.5rem;
+}
